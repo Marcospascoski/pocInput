@@ -1,1 +1,65 @@
 
+.input-form {
+    margin: auto;
+
+    ion-label {
+        flex: unset;
+        font-weight: 300;
+        font-size: 0.75rem !important;
+    }
+
+    ion-list {
+        background: none;
+
+        ion-item {
+            background: var(--ion-color-light);
+            --background: none;
+            border-radius: 5px;
+            padding: 0px 0px !important;
+            margin-bottom: 0px;
+            border: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            height: 28px;
+            --padding-start: 5px !important;
+            --inner-padding-end: 5px !important;
+
+            .item-native {
+                --background: none !important;
+            }
+
+            ion-select {
+                max-width: 100%;
+                padding: 1px 0px !important;
+                height: 75% !important;
+                
+                .select-text {
+                    font-size: 1.35rem;
+                }
+            }
+
+
+            &.item-input {
+                padding: 0px 0px !important;
+
+                .text-input:-moz-placeholder {
+                    color: #78927e !important;
+                    font-size: 1.3rem;
+                }
+            }
+
+            ion-label {
+                flex: unset;
+                font-weight: 300;
+                font-size: 0.75rem !important;
+            }
+
+            ion-input {
+                width: 100%;
+                --padding-top: 5px;
+                align-self: baseline;
+                --padding-bottom: 5px;
+            }
+        }
+    }
+}
