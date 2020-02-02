@@ -8,11 +8,28 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { NavegacaoModule, customTranslateLoader } from './navegacao/navegacao.module';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    HttpClientModule,
+    NavegacaoModule,    
+    AppRoutingModule,
+    IonicModule.forRoot(), 
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: customTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,

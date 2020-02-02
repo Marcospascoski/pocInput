@@ -1,17 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header
+  [tituloPagina]= "tituloPagina"
+></app-header>
 
 <ion-content>
   <form>
     <div class="ion-padding input-form">
       <ion-list>
         <ion-row>
-          <ion-col size-xs="12" size-sm="6" size-md="12" size-lg="6">
+          <ion-col size-xs="12" size-sm="6" size-md="12" size-lg="12">
             <ion-label>Nome</ion-label>
             <ion-item>
               <ion-input type="text" name="nome"></ion-input>

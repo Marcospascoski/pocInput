@@ -5,6 +5,7 @@
         {
           "id": 1,
           "nome": "Teste",
+          "cpf": "016.456.785-41",
           "email": "teste@gmail.com",
           "senha": "teste123"
         }
