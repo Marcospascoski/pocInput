@@ -6,7 +6,7 @@ import { FormGroup } from '@angular/forms';
   selector: 'app-header',
   templateUrl: './header.component.html'
 })
-export class HeaderComponent implements OnInit, AfterContentChecked {
+export class HeaderComponent implements AfterContentChecked {
   
   @Output() titulo:any;
   @Input('tituloPagina') tituloPagina: any;
@@ -17,15 +17,11 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
 
   constructor(private translateService: TranslateService) {}
 
-  ngOnInit(): void {
-    console.log(this.tituloPagina)
-  }
-
   ngAfterContentChecked() {
-    this.setPageTitle();
+    this.definirTituloPagina();
   }
 
-  protected setPageTitle() {
+  protected definirTituloPagina() {
     if (this.itemId) {
       this.titulo = this.statusEditarDados();
     } else {
