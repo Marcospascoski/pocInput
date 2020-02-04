@@ -2,5 +2,10 @@
   "Home": "Home",
   "Descrisao": "Descrisão",
   "Cadastro": "Cadastro",
-  "Observations": "Observações"
+  "Nome": "Nome",
+  "CPF": "CPF",
+  "Email": "Eemail",
+  "ConfirmaEmail": "ConfirmaEmail",
+  "Senha": "Senha", 
+  "ConfirmaSenha": "ConfirmaSenha"
 }
